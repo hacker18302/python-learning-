@@ -2431,7 +2431,7 @@ print(f"Hello, {name}! You are {age} years old.")
 print(f"In 10 years, you will be {age + 10} years old.")
 
 # Formatting numbers
-print(f"Balance: ${balance:,.2f}")  # Comma separator, 2 decimals
+print(f"Balance: \${balance:,.2f}")  # Comma separator, 2 decimals
 print(f"Percentage: {0.756:.1%}")   # As percentage
 
 # Alignment and padding
@@ -3081,7 +3081,7 @@ class InsufficientFundsError(Exception):
         self.deficit = amount - balance
         super().__init__(
             f"Need ${amount}, but only have ${balance}. "
-            f"Short by ${self.deficit}"
+           f"Short by \${self.deficit}"
         )
 
 # Using custom exceptions
@@ -3116,7 +3116,7 @@ try:
     new_balance = withdraw(100, 150)
 except InsufficientFundsError as e:
     print(f"Transaction failed: {e}")
-    print(f"You need ${e.deficit} more")`,
+    print(f"You need \${e.deficit} more")
         output: `Age 25: Valid
 Age -5: Age cannot be negative
 Age 200: Age seems unrealistic
@@ -3467,7 +3467,7 @@ message = greet("Python Developer")
 print(message)
 
 tax = calculate_tax(100, 0.15)
-print(f"Tax on $100 at 15%: ${tax}")
+print(f"Tax on $100 at 15%: \${tax}")
 
 print(f"PI value: {PI}")
 print(f"Version: {VERSION}")
@@ -3875,7 +3875,7 @@ shortest_word = min(words, key=lambda w: len(w))
 print(f"\\nLongest: '{longest_word}', Shortest: '{shortest_word}'")
 
 highest_paid = max(people, key=lambda p: p["salary"])
-print(f"Highest paid: {highest_paid['name']} (${highest_paid['salary']})")
+print(f"Highest paid: {highest_paid['name']} (\${highest_paid['salary']})")
 
 youngest = min(people, key=lambda p: p["age"])
 print(f"Youngest: {youngest['name']} (age {youngest['age']})")`,
