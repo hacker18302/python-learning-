@@ -39,7 +39,7 @@ export function Ad({
           display: "block",
           textAlign: "center",
         }}
-        data-ad-client="ca-pub-XXXXXXXXXX" // Replace with your AdSense publisher ID
+        data-ad-client="pub-6592867687175853" // Replace with your AdSense publisher ID
         data-ad-slot={adSlot}
         data-ad-format={adFormat}
         data-full-width-responsive={fullWidth ? "true" : "false"}
