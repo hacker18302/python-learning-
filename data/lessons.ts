@@ -3111,17 +3111,15 @@ def withdraw(balance, amount):
     if amount > balance:
         raise InsufficientFundsError(balance, amount)
     return balance - amount
-
-    code: `try:
+`,
+code: `try:
     new_balance = withdraw(100, 150)
 except InsufficientFundsError as e:
     print(f"Transaction failed: {e}")
     print(f"You need \${e.deficit} more")`,
 
-output: `Age 25: Valid
-Age -5: Age cannot be negative
-Age 200: Age seems unrealistic
-Age thirty: Age must be an integer`,
+output: `Transaction failed: Need $150, but only have $100. Short by $50
+You need $50 more`,
 
 --- Bank Account ---
 Transaction failed: Need $150, but only have $100. Short by $50
