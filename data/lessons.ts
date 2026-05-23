@@ -2430,8 +2430,8 @@ print(f"Hello, {name}! You are {age} years old.")
 # Expressions in f-strings
 print(f"In 10 years, you will be {age + 10} years old.")
 
-# Formatting numbers
-print(f"Balance: \${balance:,.2f}")  # Comma separator, 2 decimals
+# Formatting number
+print(f"Balance: \\${balance:,.2f}")# Comma separator, 2 decimals
 print(f"Percentage: {0.756:.1%}")   # As percentage
 
 # Alignment and padding
@@ -3080,8 +3080,8 @@ class InsufficientFundsError(Exception):
         self.amount = amount
         self.deficit = amount - balance
         super().__init__(
-            f"Need ${amount}, but only have ${balance}. "
-           f"Short by \${self.deficit}"
+            f"Need \\${amount}, but only have \\${balance}. "
+           f"Short by \\${self.deficit}"
         )
 
 # Using custom exceptions
@@ -3468,7 +3468,7 @@ message = greet("Python Developer")
 print(message)
 
 tax = calculate_tax(100, 0.15)
-print(f"Tax on $100 at 15%: \${tax}")
+print(f"Tax on $100 at 15%: \\${tax}")
 
 print(f"PI value: {PI}")
 print(f"Version: {VERSION}")
@@ -3876,7 +3876,7 @@ shortest_word = min(words, key=lambda w: len(w))
 print(f"\\nLongest: '{longest_word}', Shortest: '{shortest_word}'")
 
 highest_paid = max(people, key=lambda p: p["salary"])
-print(f"Highest paid: {highest_paid['name']} (\${highest_paid['salary']})")
+print(f"Highest paid: {highest_paid['name']} (\\${highest_paid['salary']})")
 
 youngest = min(people, key=lambda p: p["age"])
 print(f"Youngest: {youngest['name']} (age {youngest['age']})")`,
