@@ -3121,9 +3121,10 @@ except InsufficientFundsError as e:
 output: `Transaction failed: Need $150, but only have $100. Short by $50
 You need $50 more`,
 
---- Bank Account ---
-Transaction failed: Need $150, but only have $100. Short by $50
+output: `Transaction failed: Need $150, but only have $100. Short by $50
 You need $50 more`,
+
+explanation: "Custom exceptions make code more readable and allow specific handling. You can add extra attributes (like balance and amount) for detailed error information. Raise exceptions with helpful messages."
         explanation: "Custom exceptions make code more readable and allow specific handling. You can add extra attributes (like balance and amount) for detailed error information. Raise exceptions with helpful messages."
       }
     ],
