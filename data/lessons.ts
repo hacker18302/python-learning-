@@ -3118,6 +3118,7 @@ try:
 except InsufficientFundsError as e:
     print(f"Transaction failed: {e}")
     print(f"You need \${e.deficit} more")`,
+
 output: `Age 25: Valid
 Age -5: Age cannot be negative
 Age 200: Age seems unrealistic
