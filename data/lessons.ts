@@ -3113,11 +3113,11 @@ def withdraw(balance, amount):
     return balance - amount
 
 try:
+    code: `try:
     new_balance = withdraw(100, 150)
-code: `except InsufficientFundsError as e:
+except InsufficientFundsError as e:
     print(f"Transaction failed: {e}")
-    print(f"You need \\${e.deficit} more")`,
-
+    print(f"You need \${e.deficit} more")`,
 output: `Age 25: Valid
 Age -5: Age cannot be negative
 Age 200: Age seems unrealistic
