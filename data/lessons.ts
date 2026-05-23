@@ -2431,7 +2431,7 @@ print(f"Hello, {name}! You are {age} years old.")
 print(f"In 10 years, you will be {age + 10} years old.")
 
 # Formatting number
-print(f"Balance: \\${balance:,.2f}")# Comma separator, 2 decimals
+print(f"Balance: \${balance:,.2f}")# Comma separator, 2 decimals
 print(f"Percentage: {0.756:.1%}")   # As percentage
 
 # Alignment and padding
