@@ -3112,7 +3112,7 @@ def withdraw(balance, amount):
         raise InsufficientFundsError(balance, amount)
     return balance - amount
 
-    code: `try:
+    code: `
     new_balance = withdraw(100, 150)
 except InsufficientFundsError as e:
     print(f"Transaction failed: {e}")
