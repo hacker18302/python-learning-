@@ -44,13 +44,18 @@ export default function RootLayout({
   return (
     <html lang="en" className="bg-background">
       <head>
-        <Script
-          async
-          strategy="afterInteractive"
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6592867687175853"
-          crossOrigin="anonymous"
-        />
-      </head>
+  <meta
+    name="google-adsense-account"
+    content="ca-pub-6592867687175853"
+  />
+
+  <Script
+    async
+    strategy="afterInteractive"
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6592867687175853"
+    crossOrigin="anonymous"
+  />
+</head>
 
       <body className="font-sans antialiased">
         {children}
