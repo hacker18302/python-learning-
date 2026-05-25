@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   description: 'Master Python programming with interactive lessons, real code examples, and hands-on practice. Perfect for complete beginners.',
 
   verification: {
-    google: "PASTE_GOOGLE_VERIFICATION_CODE_HERE",
+    google: "S_Bj_ld40T0I0EVNP9ClptWdvK9ed9peN1Ak4BbyHFs",
   },
 
   generator: 'v0.app',
